@@ -1,8 +1,12 @@
-Arquetipo básico de pruebas automatizadas de APIs usando la herramienta karate
+# Arquetipo Básico de Pruebas Automatizadas con Karate DSL
 
+## Pre-requisitos
+
+1. Tener instalado gradle y agregarlo en el path de la variable de entorno.
+2. IDE IntelliJ IDEA
+3. Java 11
 
 ## Complementos
-
 
 > **NOTA**:
 > * Una vez obtenido Intellij es necesario instalar los plugins de Gherkin y Cucumber. (*[Guia de instalación plugins en intellij](https://www.jetbrains.com/help/idea/managing-plugins.html)*)
@@ -13,25 +17,20 @@ Arquetipo básico de pruebas automatizadas de APIs usando la herramienta karate
 Clonar el proyecto
 
 ```bash
-  git clone https://BancoPichinchaEC@dev.azure.com/BancoPichinchaEC/BP-Quality-Management/_git/sqa-aut-arq-karate
+  git clone https://github.com/frankramle/karate-gradle.git
 ```
 
 Entrar al directorio del proyecto
 
 ```bash
-  cd sqa-aut-arq-karate
+  cd karate-gradle
 ```
-## Modificación del codigo
-
-- Para realizar modificaciones al codigo del proyecto. realizar los siguientes pasos: 
-
-     
-	 1. Importar el proyecto desde IntelliJ IDE bajo la estructura de un proyecto Gradle existente
-	 2. Configurar JRE System Library con JavaSE-1.8
-	 3. Configurar la codificación a UTF-8 al proyecto una vez sea importado
-
 ## Comandos
 
+Para decargar todas las dependencias
+```bash
+  gradle clean build -x test 
+```
 Para ejecutar todos los features por linea de comandos
 ```bash
   gradle clean test 
