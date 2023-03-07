@@ -27,7 +27,7 @@ Entrar al directorio del proyecto
 ```
 ## Comandos
 
-Para decargar todas las dependencias
+Para decargar todas las dependencias y no ejecutar los test
 ```bash
   gradle clean build -x test 
 ```
@@ -37,8 +37,8 @@ Para ejecutar todos los features por linea de comandos
 ```
 
 > **NOTA**:
-> * Para ejecutar el proyecto se necesita Java JDK 1.8 y Gradle con la versión 4.10.2 o superior.
-> * Otra alternativa para no instalar gradle es usar el comando gradlew al momento de ejecutar el proyecto como se muestro anteriormente.
+> * Para ejecutar el proyecto se necesita Java JDK 11 y Gradle con la versión 7.6 o superior.
+> * Para poder instalar gradle en windows podemos seguir el siguiente tutorial https://www.geeksforgeeks.org/how-to-install-gradle-on-windows/.
 > * Luego de la ejecucion de pruebas, los reportes se generan en la carpeta **build/karate-reports/**, y el archivo de resumen es el **karate-summary.html**
 
 ## Construido con:
