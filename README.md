@@ -1,8 +1,8 @@
-# Arquetipo Básico de Pruebas Automatizadas con Karate DSL
+# Arquetipo Básico de Pruebas Automatizadas para microservicios con Karate DSL
 
 ## Pre-requisitos
 
-1. Tener instalado gradle y agregarlo en el path de la variable de entorno.
+1. Gradle y tener agregado en el path de la variable de entorno
 2. IDE IntelliJ IDEA
 3. Java 11
 
