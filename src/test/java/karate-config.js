@@ -6,9 +6,13 @@ function fn() {
   if (!env) {
     env = 'dev';
   }
+
+  var petstore = 'https://petstore.swagger.io';
+
   var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    petstore: petstore
   }
 
   return config;
