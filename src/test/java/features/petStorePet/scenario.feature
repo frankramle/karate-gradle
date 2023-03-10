@@ -36,14 +36,14 @@ Feature: Endpoint Pet
     And match response.id == body.id
     And match response.name == body.name
 
-    #Validation
+    # Validation
     * url petstore
     * path pet, response.id
     * method GET
     * status 200
     * match response.id == body.id
 
-  #Ejercicio
+  # Ejercicio
   Scenario: Delete pet
     * def body =
     """
@@ -75,12 +75,12 @@ Feature: Endpoint Pet
     * match response.id == body.id
     * match response.name == body.name
 
-    #Validation
     Given url petstore
     And path pet, response.id
     When method DELETE
     Then status 200
 
+    # Validation
     * url petstore
     * path pet, body.id
     * method GET
