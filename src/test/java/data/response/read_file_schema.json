@@ -1,0 +1,8 @@
+{
+  "id": "#number",
+  "name": "#string",
+  "category": "#object",
+  "photoUrls": "#[]",
+  "tags": "#[]",
+  "status": "#string"
+}
