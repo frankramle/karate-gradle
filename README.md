@@ -35,6 +35,10 @@ Para ejecutar todos los features por linea de comandos
 ```bash
   gradle clean test 
 ```
+Para ejecutar solo los escenarios por medio de un tag determinado que se envia por linea de comando
+```bash
+  gradle clean test "-Dkarate.options=--tags @soap"
+```
 
 > **NOTA**:
 > * Para ejecutar el proyecto se necesita Java JDK 11 y Gradle con la versión 7.6 o superior.
@@ -51,4 +55,3 @@ La automatización fue desarrollada con:
 ## Documentacion
 
 [Karate DSL](https://github.com/karatelabs/karate)
-
