@@ -1,10 +1,10 @@
 {
   "id": 1,
-  "username": "Ana",
+  "username": '#(usuarioCreado)',
   "firstName": "string",
   "lastName": "string",
-  "email": "ana.jimenez@hotmail.com",
+  "email": '#(correoCreado)',
   "password": "test1234",
   "phone": "999999999",
-  "userStatus": 0
+  "userStatus": '#(statusCreado)'
 }

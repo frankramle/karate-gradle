@@ -12,8 +12,7 @@ Feature: Escenarios reutilizables para USER
   @consultarUsuario
   Scenario:
     * def userBody = read('classpath:../data/crearUsuarioPost.json')
-    Given url baseUrl+/
-    And request userBody
-    When method POST
+    Given url baseUrl+"/"+usuarioCreado
+    When method GET
     Then status 200
     * print response
