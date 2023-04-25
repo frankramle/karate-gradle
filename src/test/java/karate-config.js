@@ -9,7 +9,8 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    baseUrl: 'https://petstore.swagger.io/v2/user'
   }
   if (env == 'dev') {
     // customize
