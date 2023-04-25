@@ -1,21 +1,20 @@
 function fn() {
   var env = karate.env; // get system property 'karate.env'
   karate.log('karate.env system property was:', env);
-
   karate.log('PRIMERO');
 
   if (!env) {
     env = 'dev';
   }
-  var config = {
+
+  var petstore = 'https://petstore.swagger.io';
+  var UrlUser = 'https://petstore.swagger.io/v2/user';
+    var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    petstore: petstore,
+      UrlUser: UrlUser
   }
-  if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
-  }
+
   return config;
 }
