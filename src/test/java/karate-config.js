@@ -8,11 +8,12 @@ function fn() {
   }
 
   var petstore = 'https://petstore.swagger.io';
-
-  var config = {
+  var UrlUser = 'https://petstore.swagger.io/v2/user';
+    var config = {
     env: env,
     myVarName: 'someValue',
-    petstore: petstore
+    petstore: petstore,
+      UrlUser: UrlUser
   }
 
   return config;
